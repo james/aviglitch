@@ -14,7 +14,7 @@ require 'aviglitch/tempfile'
 #
 # You can manipulate each frame, like:
 #
-#   avi = AviGlitch.open '/path/to/your.avi'
+#   avi = AviGlitch.open do'/path/to/your.avi'
 #   avi.frames.each |frame|
 #     if frame.is_keyframe?
 #       frame.data = frame.data.gsub(/\d/, '0')
